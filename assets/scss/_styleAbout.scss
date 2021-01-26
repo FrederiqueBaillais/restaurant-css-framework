@@ -1,0 +1,51 @@
+//mettre dans style.scss @import "styleAbout";
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    .whereAreWe {
+        .h2_titleAbout {
+            text-transform: capitalize;
+        }
+        table {
+            tbody {
+                .redHover {
+                    .imgMap {
+                        margin: 10px;
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none!important;
+                            height: 500px;
+                            width: 600px;
+                        }
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            height: 500px;
+                            width: 600px;
+                        }
+                    }
+                    &:hover {
+                        background-color: #C62828;
+                    }
+                }
+            }
+        }
+    }
+    .whatWeDo {
+        table {
+            tr {
+                td {
+                    overflow: hidden;
+                    .h3_titleAbout {
+                        text-transform: uppercase;
+                        color: blue;
+                    }
+                    .imgWhatWeDo {
+                        max-width: 160px;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
