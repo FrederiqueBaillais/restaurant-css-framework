@@ -13,7 +13,7 @@
 
 > So, we decided to realize a website about a food truck named "Woods Burger".
 > 
-> As the name suggests, this trucks travels through the big cities of Wallonia to sell succulent hamburgers made with love & quality local products!
+> As the name suggests, this truck travels through the big cities of Wallonia to sell succulent hamburgers made with love & quality local products!
 
 
 ## Team's members
