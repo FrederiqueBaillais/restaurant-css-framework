@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Woods Burger - Home</title>
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+        <style>
+            .no-padding{
+                padding-left: 0;
+                padding-right:0;
+            }
+        </style>
+        <style>
+            @keyframes reduceOpacity {
+                from {opacity: 0;}
+                to {opacity:1;}
+            }
+            .modal {
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            .modal:target {
+                display: table;
+                position: absolute;
+            }
+            .modal-dialog {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .modal-dialog .modal-content {
+                margin: auto;
+                background-color: #ffffff;
+                position: relative;
+                width: 80%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+                animation-name: reduceOpacity;
+                animation-duration: 0.5s;
+            }
+            .galleryContainer{
+                margin:5%;
+            }
+        </style>
+        <script>
+            function showImg(posImg){
+                var arrayImages = initArrayImages();
+                var arrayLegends = initArrayLegends();
+                var posCurrentImg = parseInt(document.getElementById("posCurrentImg").innerHTML);
+                var indice = posCurrentImg + posImg;
+                document.getElementById("modalImage").src = changeImgSrc(arrayImages[indice]);
+                document.getElementById("modalLegend").innerHTML = arrayLegends[indice];                
+            }
+            function changeThumbnailSrc(img){
+                var sourceUrl = "/assets/img/gallery/"+img+"-thumbnail.png";
+                return sourceUrl;
+            }
+            function changeImgSrc(img){
+                var sourceUrl = "/assets/img/gallery/"+img+".png";
+                return sourceUrl;
+            }
+            function nextImages(){
+                var arrayImages = initArrayImages();
+                var arrayLegends = initArrayLegends();
+                var posNextImages = 0;
+                var posCurrentImg = parseInt(document.getElementById("posCurrentImg").innerHTML);
+                if(posCurrentImg<9){posNextImages = posCurrentImg + 3;}else{posNextImages = 0;}
+                document.getElementById("posCurrentImg").innerHTML = posNextImages;
+                //alert(posNextImages);
+                document.getElementById("srcImg1").src = changeThumbnailSrc(arrayImages[posNextImages]);
+                document.getElementById("srcImg2").src = changeThumbnailSrc(arrayImages[posNextImages+1]);
+                document.getElementById("srcImg3").src = changeThumbnailSrc(arrayImages[posNextImages+2]);
+                document.getElementById("legendImg1").innerHTML = arrayLegends[posNextImages];
+                document.getElementById("legendImg2").innerHTML = arrayLegends[posNextImages+1];
+                document.getElementById("legendImg3").innerHTML = arrayLegends[posNextImages+2];
+            }
+            function initArrayImages(){
+                var stringArrayImages=document.getElementById("arrayImages").innerHTML;
+                var arrayImages = stringArrayImages.split(",");
+                return arrayImages;
+            }
+            function initArrayLegends(){
+                var stringArrayLegends=document.getElementById("arrayLegends").innerHTML;
+                var arrayLegends = stringArrayLegends.split(",");
+                return arrayLegends;
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <!-- Logo -->
+                <a class="navbar-brand mx-5" href="/index.html">
+                    <img src="/assets/img/WOODSBURGER_LOGO_V1.svg" alt="WOODSBURGER">
+                </a>
+    
+                <!-- Button -->
+                <button class="navbar-toggler mx-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar" ria-controls="collapsibleNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+    
+                <!-- Links of page -->
+                <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html">Welcom</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pictures</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="galleryContainer text-center">
+                <h1>Bon appétit!</h1>
+                <div class="row text-center d-flex flex-wrap align-display-around align-items-baseline">
+                    <div class="col-6 col-md-4">
+                        <p>
+                            <a href="#zoomImage" onClick="showImg(0);">
+                                <img id="srcImg1" src="/assets/img/gallery/woods-burger0-thumbnail.png" class="img-fluid" alt="Humm" />
+                            </a>
+                        </p>
+                        <p id="legendImg1" class="legend">Légende 1</p>
+                    </div>            
+                    <div class="col-6 col-md-4">
+                        <p>
+                            <a href="#zoomImage" onClick="showImg(1);">
+                                <img id="srcImg2" src="/assets/img/gallery/woods-burger1-thumbnail.png" class="img-fluid" alt="Image 2" />
+                            </a>
+                        </p>
+                        <p id="legendImg2" class="legend">Légende 2</p>
+                    </div>                     
+                    <div class="col-6 col-md-4">
+                        <p>
+                            <a href="#zoomImage" onClick="showImg(2);">
+                                <img id="srcImg3" src="/assets/img/gallery/woods-burger2-thumbnail.png" class="img-fluid" alt="Image 3" />
+                            </a>
+                        </p>
+                        <p id="legendImg3" class="legend">Légende 3</p>
+                    </div>
+                    <div class="col-6 col-md-12 text-center align-items-center">
+                        <a href="#" onclick="nextImages();">
+                            <i class="bi-arrow-right-circle-fill" style="font-size: 5rem; color:#212529;"></i>
+                        </a>
+                    </div>    
+                </div>
+            </section>
+            <div id="zoomImage" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <header class="container"> 
+                            <div class="row">
+                                <div class="col-6 col-md-6 d-flex align-items-center">
+                                    <p id="modalLegend" class="legend">Titre image</p>
+                                </div>
+                                <div class="col-6 col-md-6 d-flex align-items-center justify-content-end">
+                                    <a href="#" class="closebtn">
+                                        <i class="bi-x-circle-fill" style="font-size: 2.5rem; color:#212529;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </header>
+                        <div class="col-12 col-md-12 ">
+                            <img id="modalImage" src="/assets/img/gallery/humm.png" style="width: 100%;" alt="Humm" /> 
+                        </div>
+                        <footer class="container">
+                        </footer>
+                    </div>
+                </div>
+            </div> 
+            <div id="posCurrentImg" style="visibility:hidden;">0</div>
+            <div id="arrayImages" style="visibility:hidden;">woods-burger0,woods-burger1,woods-burger2,woods-burger3,woods-burger4,woods-burger5,woods-burger6,woods-burger7,woods-burger8,woods-burger9,woods-burger10,woods-burger11</div>
+            <div id="arrayLegends" style="visibility:hidden;">Légende 1,Légende 2,Légende 3,Légende 4,Légende 5,Légende 6,Légende 7,Légende 8,Légende 9,Légende 10,Légende 11,Légende 12</div>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="/assets/js/bootstrap.min.js"></script>
+    </body>
+</html>
