@@ -1,12 +1,17 @@
 @import "style";
 
 main {  
-    section {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-        border-radius: 15px 15px 0 0;
+    background-image: url("/assets/img/img_contact/background-truck.jpg");
+    background-size: cover;
+    background-position: top, left;
+    background-repeat: no-repeat;
+    #formSection {
+        margin:auto;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
         max-width: 600px !important;
+        border-radius: 15px 15px 0 0;
         .title {
-        background-color: #C72838;
+        background-color: #c72838cb;
         color: white;
         border-radius: 15px 15px 0 0;
         font-family: Caveat;
@@ -23,7 +28,7 @@ main {
                     }
                 }
                 button {
-                    background-color: #C72838;
+                    background-color: #c72838e9;
                     color: white;
                 }
             }
@@ -31,3 +36,8 @@ main {
     }
 }
 
+@media (min-width: 650px) {
+    #formSection{
+        margin: 2rem 1rem 2rem auto !important;
+    }
+}

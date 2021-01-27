@@ -34,30 +34,44 @@ body {
 }
 
 body main {
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
-main section {
-  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  border-radius: 15px 15px 0 0;
+main {
+  background-image: url("/assets/img/img_contact/background-truck.jpg");
+  background-size: cover;
+  background-position: top, left;
+  background-repeat: no-repeat;
+}
+
+main #formSection {
+  margin: auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   max-width: 600px !important;
+  border-radius: 15px 15px 0 0;
 }
 
-main section .title {
-  background-color: #C72838;
+main #formSection .title {
+  background-color: #c72838cb;
   color: white;
   border-radius: 15px 15px 0 0;
   font-family: Caveat;
   font-size: 3rem;
 }
 
-main section #formsContact form div div img {
+main #formSection #formsContact form div div img {
   width: 25px;
 }
 
-main section #formsContact form button {
-  background-color: #C72838;
+main #formSection #formsContact form button {
+  background-color: #c72838e9;
   color: white;
+}
+
+@media (min-width: 650px) {
+  #formSection {
+    margin: 2rem 1rem 2rem auto !important;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
