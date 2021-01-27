@@ -1,0 +1,15 @@
+@import "variable";
+footer {
+    section {
+        .footerTitle {
+            color: $blue-cool ;
+        }
+        div {
+            
+            nav {
+                font-family: Caveat;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

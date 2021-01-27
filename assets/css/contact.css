@@ -33,59 +33,22 @@ body main {
   min-height: 80vh;
 }
 
-.titre {
+main section {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px 15px 0 0;
+  max-width: 600px !important;
+}
+main section .title {
+  background-color: #C72838;
   color: white;
-  padding-left: 15rem;
-  text-decoration: underline;
+  border-radius: 15px 15px 0 0;
   font-family: Caveat;
-  margin-top: 2rem;
+  font-size: 3rem;
 }
-
-body {
-  background-image: url("https://nsa40.casimages.com/img/2021/01/27/210127050039314902.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+main section #formsContact form div div img {
+  width: 25px;
 }
-
-p {
-  margin-left: 8rem;
-}
-
-.menu img {
-  position: absolute;
-  margin-left: 4rem;
-}
-.menu .prix {
-  text-align: center;
-  width: 60px;
-  border-radius: 5px;
-}
-
-.hamb {
-  background-color: white;
-  border: solid 3px #e40000;
-  border-radius: 15px;
-  font-family: Caveat;
-}
-
-.attention {
-  font-style: oblique;
-}
-
-.accompagnement {
-  display: flex;
+main section #formsContact form button {
+  background-color: #C72838;
   color: white;
-}
-
-.boissons {
-  margin-bottom: 3rem;
-}
-
-h5 {
-  padding-left: 5rem;
-  font-family: Caveat;
-}
-
-li {
-  list-style: none;
-}/*# sourceMappingURL=menu.css.map */
+}/*# sourceMappingURL=contact.css.map */
