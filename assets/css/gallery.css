@@ -1,0 +1,97 @@
+header nav a img {
+  width: 90px;
+}
+header nav button .navbar-toggler-icon {
+  background-image: url("/assets/img/list.svg");
+  width: 50px;
+  height: 50px;
+}
+header nav div ul li {
+  font-size: 1.1rem;
+  margin: 0 1rem;
+}
+
+main #formsContact {
+  max-width: 600px;
+}
+main #formsContact form div div img {
+  width: 25px;
+}
+
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+main .whereAreWe .h2_titleAbout {
+  text-transform: capitalize;
+}
+main .whereAreWe table tbody .redHover .imgMap {
+  margin: 10px;
+}
+main .whereAreWe table tbody .redHover .imgMap .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+main .whereAreWe table tbody .redHover .imgMap .mapouter {
+  position: relative;
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+main .whereAreWe table tbody .redHover:hover {
+  background-color: #C62828;
+}
+main .whatWeDo table tr td {
+  overflow: hidden;
+}
+main .whatWeDo table tr td .h3_titleAbout {
+  text-transform: uppercase;
+  color: blue;
+}
+main .whatWeDo table tr td .imgWhatWeDo {
+  max-width: 160px;
+  float: left;
+}
+
+main .galleryContainer {
+  margin: 5%;
+}
+main .modal {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+main .modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+@-webkit-keyframes reduceOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes reduceOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .modal-dialog .modal-content {
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: reduceOpacity;
+          animation-name: reduceOpacity;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}/*# sourceMappingURL=gallery.css.map */
