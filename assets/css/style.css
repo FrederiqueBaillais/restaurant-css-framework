@@ -1,56 +1,19 @@
 header nav a img {
   width: 90px;
 }
+
 header nav button .navbar-toggler-icon {
   background-image: url("/assets/img/list.svg");
   width: 50px;
   height: 50px;
 }
+
 header nav div ul li {
   font-size: 1.1rem;
   margin: 0 1rem;
 }
 
-main #formsContact {
-  max-width: 600px;
-}
-main #formsContact form div div img {
-  width: 25px;
-}
-
 main {
-  margin-left: 5%;
-  margin-right: 5%;
+  min-height: 80vh;
 }
-main .whereAreWe .h2_titleAbout {
-  text-transform: capitalize;
-}
-main .whereAreWe table tbody .redHover .imgMap {
-  margin: 10px;
-}
-main .whereAreWe table tbody .redHover .imgMap .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 600px;
-}
-main .whereAreWe table tbody .redHover .imgMap .mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 600px;
-}
-main .whereAreWe table tbody .redHover:hover {
-  background-color: #C62828;
-}
-main .whatWeDo table tr td {
-  overflow: hidden;
-}
-main .whatWeDo table tr td .h3_titleAbout {
-  text-transform: uppercase;
-  color: blue;
-}
-main .whatWeDo table tr td .imgWhatWeDo {
-  max-width: 160px;
-  float: left;
-}
+/*# sourceMappingURL=style.css.map */

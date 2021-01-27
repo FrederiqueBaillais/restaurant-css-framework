@@ -7,6 +7,7 @@
     <title>Contact</title>
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
@@ -29,7 +30,7 @@
             <div class=" collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Welcom</a>
+                        <a class="nav-link" href="/index.html">Welcome</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Menu</a>
@@ -48,53 +49,128 @@
         </nav>
     </header>
     <main>
-        <div id="formsContact" class="container border mx-auto my-5">
-            <form class="row g-3 needs-validation" novalidate>
-                <div class=" col-md-6">
-                    <label for="firstname" class="form-label">First name</label>
-                    <div class="input-group">
-                        <span class="input-group-addon border p-1"><img src="/assets/img/img_contact/person-fill.svg"
-                                alt="user"></span>
-                        <input type="text" class="form-control" id="firstname" placeholder="first name.." required>
-                    </div>
-                </div>
+        <section class="container my-5 border p-0">
+            <h1 class="title text-center p-4">To contact us :</h1>
+            <div id="formsContact" class="container mx-auto p-3">
 
-                <div class="col-md-6">
-                    <label for="lastname" class="form-label">Last name</label>
-                    <div class="input-group">
-                        <span class="input-group-addon border p-1"><img src="/assets/img/img_contact/person-fill.svg"
-                                alt="user"></span>
-                        <input type="text" class="form-control" id="lastname" placeholder="last name.." required>
+                <form class="row g-3">
+                    <div class=" col-md-6">
+                        <label for="firstname" class="form-label">First name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon border p-1"><img
+                                    src="/assets/img/img_contact/person-fill.svg" alt="user"></span>
+                            <input type="text" class="form-control" id="firstname" placeholder="first name.." required>
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <label for="email" class="form-label">Email</label>
-                    <div class="input-group">
-                        <span class="input-group-addon border p-1"><img src="/assets/img/img_contact/envelope-fill.svg"
-                                alt="mail"></span>
-                        <input type="email" class="form-control" id="email" placeholder="email.." required>
+
+                    <div class="col-md-6">
+                        <label for="lastname" class="form-label">Last name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon border p-1"><img
+                                    src="/assets/img/img_contact/person-fill.svg" alt="user"></span>
+                            <input type="text" class="form-control" id="lastname" placeholder="last name.." required>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <label for="chossen" class="form-label">Subject</label>
-                    <select class="form-select" id="chossen" required>
-                        <option selected disabled value="test">Choose your subject...</option>
-                        <option>...</option>
-                    </select>
-                </div>
-                <div class="col-12">
-                    <label for="textArea" class="form-label">Text area</label>
-                    <textarea class="form-control" id="textArea" placeholder="....." required></textarea>
-                </div>
-                <div class="col-12 mb-3">
-                    <button class="btn btn-primary" type="submit"><img src="/assets/img/img_contact/caret-right.svg"
-                            alt="arrow">Submit form</button>
-                </div>
-            </form>
-        </div>
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon border p-1"><img
+                                    src="/assets/img/img_contact/envelope-fill.svg" alt="mail"></span>
+                            <input type="email" class="form-control" id="email" placeholder="email.." required>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="chossen" class="form-label">Subject</label>
+                        <select class="form-select" id="chossen" required>
+                            <option selected disabled value="test">Choose your subject...</option>
+                            <option>Suggestion</option>
+                            <option>Want us in your city ?</option>
+                            <option>Want us in your event ?</option>
+                            <option>Problem with our food</option>
+                            <option>Other..</option>
+
+
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="textArea" class="form-label">Text area</label>
+                        <textarea class="form-control" id="textArea" placeholder="....." required></textarea>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <button class="btn" type="submit"><img src="/assets/img/img_contact/caret-right.svg"
+                                alt="arrow">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white">
+        <section class="container-fluid p-4">
+            <!-- rgba(255,255,255,.55) -->
+            <div class="row">
+                <!-- Image -->
+                <div class="col-8 col-md-4 col-lg-3 mx-auto mt-5"><img src="/assets/img/WOODSBURGER_LOGO_V1.svg"
+                        alt="logo">
+                </div>
+                <!-- Contact -->
+                <div class="col-12 col-md-4 col-lg-3 mx-auto mt-5">
+                    <h1>Contact</h1>
+                    <div class="row">
+                        <div class="col-4">PHONE :</div>
+                        <div class="col-6 ms-auto">04546451</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">EMAIL :</div>
+                        <div class="col-6 ms-auto">dupunt@aie.be</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">PAYS :</div>
+                        <div class="col-6 ms-auto">Belgique</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">HORAIRE :</div>
+                        <div class="col-6 ms-auto"><a class="text-white" href="/pages/about_us.html">See the plannig</a>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 h4">About us :</div>
+                        <div class="col-10 mx-auto mt-2">Mous sommes un foodtruck de qualite et on mange trop bien ici,
+                            sur
+                            ma vie jte le dis</div>
+                    </div>
+                </div>
+                <!-- Nav -->
+                <div class="col-12 col-md-4 col-lg-3 mx-auto my-5">
 
+                    <h1>Navigation</h1>
+                    <nav class="navbar navbar-dark ms-5">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Welcome</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pictures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Restaurant</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="text-center p-4">© 2020 Copyright:
+                <a href="#" class="text-white">Mention.legale</a>
+            </div>
+        </section>
     </footer>
     <script src="/assets/js/bootstrap.min.js"></script>
 </body>

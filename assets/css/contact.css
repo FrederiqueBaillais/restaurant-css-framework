@@ -1,0 +1,22 @@
+main section {
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 15px 15px 0 0;
+  max-width: 600px !important;
+}
+
+main section .title {
+  background-color: #C72838;
+  color: white;
+  border-radius: 15px 15px 0 0;
+}
+
+main section #formsContact form div div img {
+  width: 25px;
+}
+
+main section #formsContact form button {
+  background-color: #C72838;
+  color: white;
+}
+/*# sourceMappingURL=contact.css.map */
