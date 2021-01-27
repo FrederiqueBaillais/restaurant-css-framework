@@ -4,6 +4,11 @@
 .jumbotron{
     border-radius: 0px;
 }
+.jumbotron h1{
+  font-family: Caveat;
+  font-size: 4.5em;
+}
+
 .fond{
     background-image: url("https://nsa40.casimages.com/img/2021/01/26/210126021721231741.jpg");
     height: 40rem;
@@ -21,6 +26,10 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+  }
+  .container h3{
+    font-family: Caveat;
+    font-size: 5em;
   }
 //container home (end)
 
