@@ -1,24 +1,4 @@
 @import "style.css";
-header nav a img {
-  width: 90px;
-}
-header nav button .navbar-toggler-icon {
-  background-image: url("/assets/img/list.svg");
-  width: 50px;
-  height: 50px;
-}
-header nav div ul li {
-  font-size: 1.1rem;
-  margin: 0 1rem;
-}
-
-main #formsContact {
-  max-width: 600px;
-}
-main #formsContact form div div img {
-  width: 25px;
-}
-
 main {
   margin-left: 5%;
   margin-right: 5%;
@@ -27,8 +7,22 @@ main .whoAreWe .h2_titleAbout {
   text-transform: capitalize;
   text-align: center;
 }
-main .whoAreWe p {
-  color: #C62828;
+main .whoAreWe table tr td {
+  border-radius: 30px;
+  padding: 5px 5px 5px 5px;
+  color: #000000;
+}
+main .whoAreWe table tr .bgBread {
+  background-color: #663300;
+}
+main .whoAreWe table tr .bgMeat {
+  background-color: #FFCC33;
+}
+main .whoAreWe table tr .bgKetchup {
+  background-color: #CC0000;
+}
+main .whoAreWe table tr .bgSalad {
+  background-color: #33CC00;
 }
 main .whereAreWe .h2_titleAbout {
   text-transform: capitalize;
@@ -56,12 +50,26 @@ main .whatWeDo .h2_titleAbout {
   text-transform: capitalize;
   text-align: center;
 }
+main .whatWeDo table tr .bgBread {
+  background-color: #663300;
+}
+main .whatWeDo table tr .bgMeat {
+  background-color: #FFCC33;
+}
+main .whatWeDo table tr .bgKetchup {
+  background-color: #CC0000;
+}
+main .whatWeDo table tr .bgSalad {
+  background-color: #33CC00;
+}
 main .whatWeDo table tr td {
   overflow: hidden;
+  border-radius: 30px;
+  padding: 5px 5px 5px 5px;
 }
 main .whatWeDo table tr td .h3_titleAbout {
   text-transform: uppercase;
-  color: #C62828;
+  color: #000000;
 }
 main .whatWeDo table tr td .imgWhatWeDo {
   max-width: 160px;
