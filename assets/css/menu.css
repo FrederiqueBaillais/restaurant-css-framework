@@ -1,0 +1,35 @@
+.titre {
+  padding-left: 5rem;
+  text-decoration: underline;
+}
+
+p {
+  margin-left: 8rem;
+}
+
+.menu img {
+  position: absolute;
+  margin-left: 4rem;
+}
+.menu .prix {
+  text-align: center;
+  width: 60px;
+  background-color: #ff0a0ab9 !important;
+  border-radius: 5px;
+}
+
+.attention {
+  font-style: oblique;
+}
+
+.accompagnement {
+  display: flex;
+}
+
+h5 {
+  padding-left: 5rem;
+}
+
+li {
+  list-style: none;
+}/*# sourceMappingURL=menu.css.map */
