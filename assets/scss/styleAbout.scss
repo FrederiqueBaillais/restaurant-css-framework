@@ -1,0 +1,112 @@
+// @import "style";
+body {
+    //background-color: #FFFFCC;
+    background: url(../img/about_us/bgAbout.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #FFFFFF;
+}
+
+main {
+    margin-left: 5%;
+    margin-right: 5%;
+    .whoAreWe {
+        .h2_titleAbout {
+            text-transform: capitalize;
+            text-align: center;
+        }
+        table {
+            color: #FFFFFF;
+            tr {
+                td {
+                    border-radius: 50px;
+                    padding: 15px 15px 15px 15px;
+                    color: #000000;
+                }
+                .bgBread {
+                    background-color: #d99e82;
+                }
+                .bgMeat {
+                    background-color: #662113;
+                }
+                .bgCheese {
+                    background-color: #ffcc4d;
+                }
+                .bgSalad {
+                    background-color: #77b255;
+                }
+                .bgKetchup {
+                    background-color: #dd2e44;
+                }
+            }
+        }
+    }
+    .whereAreWe {
+        .h2_titleAbout {
+            text-transform: capitalize;
+            text-align: center;
+        }
+        table {
+            color: #FFFFFF;
+            .colorHover {
+                .imgMap {
+                    margin: 10px;
+                    .map-responsive {
+                        overflow: hidden;
+                        padding-bottom: 56.25%;
+                        position: relative;
+                        text-align: right;
+                        background: none!important;
+                        height: 0;
+                        iframe {
+                            left: 0;
+                            top: 0;
+                            height: 100%;
+                            width: 100%;
+                            position: absolute;
+                        }
+                    }
+                }
+                &:hover {
+                    background-color: #77b255;
+                }
+            }
+        }
+    }
+    .whatWeDo {
+        .h2_titleAbout {
+            text-transform: capitalize;
+            text-align: center;
+        }
+        table {
+            tr {
+                .bgBread {
+                    background-color: #d99e82;
+                }
+                .bgMeat {
+                    background-color: #662113;
+                }
+                .bgCheese {
+                    background-color: #ffcc4d;
+                }
+                .bgSalad {
+                    background-color: #77b255;
+                }
+                td {
+                    overflow: hidden;
+                    border-radius: 50px;
+                    padding: 15px 15px 15px 15px;
+                    .h3_titleAbout {
+                        text-transform: uppercase;
+                        color: #000000;
+                    }
+                    .imgWhatWeDo {
+                        max-width: 160px;
+                        float: left;
+                    }
+                }
+            }
+        }
+    }
+}
