@@ -1,0 +1,41 @@
+.jumbotron {
+  border-radius: 0px;
+}
+
+.fond {
+  background-image: url("https://nsa40.casimages.com/img/2021/01/26/210126021721231741.jpg");
+  height: 40rem;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}/*# sourceMappingURL=style_home.css.map */
