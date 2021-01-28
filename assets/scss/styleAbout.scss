@@ -1,6 +1,5 @@
-// @import "style";
+//@import "style";
 body {
-    //background-color: #FFFFCC;
     background: url(../img/about_us/bgAbout.jpg);
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -13,6 +12,7 @@ main {
     margin-right: 5%;
     .whoAreWe {
         .h2_titleAbout {
+            margin: 30px;
             text-transform: capitalize;
             text-align: center;
         }
@@ -44,6 +44,7 @@ main {
     }
     .whereAreWe {
         .h2_titleAbout {
+            margin: 30px;
             text-transform: capitalize;
             text-align: center;
         }
@@ -69,13 +70,16 @@ main {
                     }
                 }
                 &:hover {
-                    background-color: #77b255;
+                    background-color: #c72838cb;
+                    color: white;
+                    font-weight: 800;
                 }
             }
         }
     }
     .whatWeDo {
         .h2_titleAbout {
+            margin: 30px;
             text-transform: capitalize;
             text-align: center;
         }
@@ -83,27 +87,65 @@ main {
             tr {
                 .bgBread {
                     background-color: #d99e82;
+                    top: -112px;
+                    z-index: 1;
                 }
                 .bgMeat {
                     background-color: #662113;
+                    z-index: 2;
                 }
                 .bgCheese {
                     background-color: #ffcc4d;
+                    z-index: 3;
                 }
                 .bgSalad {
                     background-color: #77b255;
+                    z-index: 0;
                 }
                 td {
                     overflow: hidden;
                     border-radius: 50px;
                     padding: 15px 15px 15px 15px;
+                    transition: all ease-in-out 0.3s;
                     .h3_titleAbout {
                         text-transform: uppercase;
                         color: #000000;
+                        vertical-align: middle;
+                        text-align: center;
+                        opacity: 1;
                     }
                     .imgWhatWeDo {
                         max-width: 160px;
                         float: left;
+                    }
+                    p {
+                        opacity: 0;
+                    }
+                    &:hover {
+                        transform: scale(1.2);
+                        z-index: 3;
+                        box-shadow: 0px 0px 40px black;
+                        p {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// pour les plus petits formats, affichage direct des bulles des engagements
+@media only screen and (max-width: 768px) {
+    main {
+        .whatWeDo {
+            table {
+                tr {
+                    td {
+                        flex-direction: column;
+                        p {
+                            opacity: 1;
+                        }
                     }
                 }
             }
