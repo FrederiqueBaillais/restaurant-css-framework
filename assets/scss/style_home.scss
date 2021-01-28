@@ -1,0 +1,59 @@
+@import "style";
+
+// configuration jumbotron en full img home (start)
+.jumbotron{
+    border-radius: 0px;
+}
+.jumbotron h1{
+  font-family: Caveat;
+  font-size: 4.5em;
+}
+
+.fond{
+    background-image: url("https://nsa40.casimages.com/img/2021/01/26/210126021721231741.jpg");
+    height: 40rem;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+// configuration jumbotron en full img home (end)
+
+//container home (start)
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+//container home (end)
+
+//responsive promo (start)
+// Smartphones en mode paysage
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+  }
+  // Tablettes
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  // Grand écran
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  // Très grand écran
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+//responsive promo (end)
+  
