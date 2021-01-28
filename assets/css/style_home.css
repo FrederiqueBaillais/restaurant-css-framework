@@ -7,13 +7,11 @@
 header nav a img {
   width: 90px;
 }
-
 header nav button .navbar-toggler-icon {
   background-image: url("/assets/img/list.svg");
   width: 50px;
   height: 50px;
 }
-
 header nav div ul li {
   font-size: 2rem;
   margin: 0 1rem;
@@ -23,16 +21,14 @@ header nav div ul li {
 footer section .footerTitle {
   color: #16a086;
 }
-
 footer section div nav {
   font-family: Caveat;
   font-size: 1.6rem;
 }
 
 body {
-  font-family: Montserrat , sans-serif;
+  font-family: Montserrat, sans-serif;
 }
-
 body main {
   min-height: 85vh;
 }
@@ -68,22 +64,18 @@ body main {
     max-width: 540px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
-
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
   }
 }
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
-}
-/*# sourceMappingURL=style_home.css.map */
+}/*# sourceMappingURL=style_home.css.map */
