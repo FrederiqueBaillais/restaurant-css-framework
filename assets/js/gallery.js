@@ -18,11 +18,11 @@ function closeZoom(){
     document.getElementById("bigZoomImage").style.display="none";
 }
 function changeThumbnailSrc(img){
-    var sourceUrl = "/assets/img/gallery/"+img+"-thumbnail.png";
+    var sourceUrl = "/assets/img/gallery/"+img+"_thumbnail.jpg";
     return sourceUrl;
 }
 function changeImgSrc(img){
-    var sourceUrl = "/assets/img/gallery/"+img+".png";
+    var sourceUrl = "/assets/img/gallery/"+img+".jpg";
     return sourceUrl;
 }
 function nextImages(){    
@@ -42,6 +42,7 @@ function nextImages(){
 function initArrayImages(){
     var stringArrayImages=document.getElementById("arrayImages").innerHTML;
     var arrayImages = stringArrayImages.split(",");
+    //alert("tab_img = " + arrayImages);
     return arrayImages;
 }
 function initArrayLegends(){
