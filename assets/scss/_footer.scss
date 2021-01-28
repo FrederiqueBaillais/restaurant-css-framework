@@ -1,6 +1,20 @@
 @import "variable";
 footer {
+    
+
+
     section {
+
+        .footerName {
+            list-style-type: none;
+            font-size: 1.5rem;
+            li{
+                a{
+                    font-family: Caveat;
+                    color: white;
+                }
+            }
+        }
         .footerTitle {
             color: $blue-cool;
         }
