@@ -37,42 +37,53 @@ body main {
   min-height: 85vh;
 }
 
-main {
-  background-image: url("/assets/img/img_contact/background-truck.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top 0, left 0;
-  background-repeat: no-repeat;
+.jumbotron {
+  border-radius: 0px;
 }
 
-main #formSection {
-  margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  max-width: 600px !important;
-  border-radius: 15px 15px 0 0;
-}
-
-main #formSection .title {
-  background-color: #c72838cb;
-  color: white;
-  border-radius: 15px 15px 0 0;
+.jumbotron h1 {
   font-family: Caveat;
-  font-size: 3rem;
+  font-size: 4.5em;
 }
 
-main #formSection #formsContact form div div img {
-  width: 25px;
+.fond {
+  background-image: url("https://nsa40.casimages.com/img/2021/01/26/210126021721231741.jpg");
+  height: 40rem;
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-main #formSection #formsContact form button {
-  background-color: #c72838e9;
-  color: white;
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (min-width: 650px) {
-  #formSection {
-    margin: 2rem 1rem 2rem auto !important;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
   }
 }
-/*# sourceMappingURL=contact.css.map */
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/*# sourceMappingURL=style_home.css.map */

@@ -37,42 +37,54 @@ body main {
   min-height: 85vh;
 }
 
-main {
-  background-image: url("/assets/img/img_contact/background-truck.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: top 0, left 0;
+body {
+  background-image: url("https://nsa40.casimages.com/img/2021/01/27/210127050039314902.jpg");
   background-repeat: no-repeat;
-}
-
-main #formSection {
-  margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  max-width: 600px !important;
-  border-radius: 15px 15px 0 0;
-}
-
-main #formSection .title {
-  background-color: #c72838cb;
-  color: white;
-  border-radius: 15px 15px 0 0;
+  background-size: cover;
   font-family: Caveat;
-  font-size: 3rem;
 }
 
-main #formSection #formsContact form div div img {
-  width: 25px;
+body li {
+  list-style: none;
 }
 
-main #formSection #formsContact form button {
-  background-color: #c72838e9;
+body .titre {
   color: white;
+  padding-left: 10rem;
+  text-decoration: underline;
+  margin-top: 2rem;
 }
 
-@media (min-width: 650px) {
-  #formSection {
-    margin: 2rem 1rem 2rem auto !important;
-  }
+body .hamb {
+  background-color: white;
+  border: solid 3px #e40000;
+  border-radius: 15px;
 }
-/*# sourceMappingURL=contact.css.map */
+
+body .menu img {
+  float: left;
+  margin-left: 1rem;
+}
+
+body .menu .prix {
+  margin-left: 15rem;
+}
+
+body .menu h5 {
+  padding-left: 5rem;
+}
+
+body .accompagnement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-style: oblique;
+  margin-left: 8rem;
+  font-size: 20px;
+}
+
+body .boissons {
+  margin-bottom: 3rem;
+}
+/*# sourceMappingURL=menu.css.map */
