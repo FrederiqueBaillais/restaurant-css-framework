@@ -40,15 +40,12 @@ main {
   background-position: top 0, left 0;
   background-repeat: no-repeat;
 }
-
 main #formSection {
   margin: auto;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-          box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   max-width: 600px !important;
   border-radius: 15px 15px 0 0;
 }
-
 main #formSection .title {
   background-color: #c72838cb;
   color: white;
@@ -56,11 +53,9 @@ main #formSection .title {
   font-family: Caveat;
   font-size: 3rem;
 }
-
 main #formSection #formsContact form div div img {
   width: 25px;
 }
-
 main #formSection #formsContact form button {
   background-color: #c72838e9;
   color: white;
@@ -70,5 +65,4 @@ main #formSection #formsContact form button {
   #formSection {
     margin: 2rem 1rem 2rem auto !important;
   }
-}
-/*# sourceMappingURL=contact.css.map */
+}/*# sourceMappingURL=contact.css.map */
