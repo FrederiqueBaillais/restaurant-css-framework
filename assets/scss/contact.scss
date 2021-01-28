@@ -3,7 +3,8 @@
 main {  
     background-image: url("/assets/img/img_contact/background-truck.jpg");
     background-size: cover;
-    background-position: top, left;
+    background-attachment: fixed;
+    background-position: top 0, left 0 ;
     background-repeat: no-repeat;
     #formSection {
         margin:auto;

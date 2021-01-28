@@ -15,7 +15,7 @@ header nav button .navbar-toggler-icon {
 }
 
 header nav div ul li {
-  font-size: 1.7rem;
+  font-size: 2rem;
   margin: 0 1rem;
   font-family: Caveat;
 }
@@ -40,7 +40,8 @@ body main {
 main {
   background-image: url("/assets/img/img_contact/background-truck.jpg");
   background-size: cover;
-  background-position: top, left;
+  background-attachment: fixed;
+  background-position: top 0, left 0;
   background-repeat: no-repeat;
 }
 
