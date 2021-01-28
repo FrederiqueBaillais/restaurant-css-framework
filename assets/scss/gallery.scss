@@ -1,0 +1,86 @@
+@import "style";
+ 
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap%27');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap%27');
+
+$blue-cool:#16a086; // blue de la charte
+$red-truck: #C72838; // rouge du van
+.modal:target {
+    display: table;
+    position: absolute;
+}
+main {
+    h1{
+        margin:30px;
+    }
+    .galleryTitle{
+        padding:0px;
+        text-align:center;
+        font-family: Montserrat;
+        background-image: none;
+    }
+    section {
+        background-image: url("/assets/img/WOODSBURGER_LOGO_V3.svg");
+        background-repeat:no-repeat;
+        background-position: center;
+        width:100%;
+        color:#212529;
+        margin-top:5%;
+        margin:auto;
+        padding:5%;
+        max-width: 1000px;
+        div {
+            div {
+                p{
+                    a {
+                        img {
+                            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+                            border:10px solid #ffffff;
+                            border-radius:3px;
+                        }
+                    }
+                }
+                .legend {
+                    font-family: Caveat;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                }
+            }
+        }
+    }      
+    #bigZoomImage{
+        display:none;
+        background-image: none;
+        background-color: #ffffff;
+        div {                
+            div {
+                background-color: #ffffff;
+                #modalLegend{
+                    font-family: Caveat;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    border:5px solid #ffffff;
+                    padding:5px;
+                }
+            }
+        }
+        div {
+            div {
+                img{
+                    color:#212529;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+                    border:10px solid #ffffff;
+                    border-radius:3px;
+                }
+            }
+        }
+    }
+    #modalImage{
+        color:#212529;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        border-top:0.8rem solid #ffffff;
+        border-bottom:0.8rem solid #ffffff;
+        border-radius:3px;
+    }
+}
