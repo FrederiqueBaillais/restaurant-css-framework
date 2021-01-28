@@ -11,10 +11,6 @@ $red-truck: #C72838; // rouge du van
     position: absolute;
 }
 main {
-    @keyframes reduceOpacity {
-        from {opacity: 0;}
-        to {opacity:1;}
-    }
     h1{
         margin:30px;
     }
@@ -28,7 +24,6 @@ main {
         background-image: url("/assets/img/WOODSBURGER_LOGO_V3.svg");
         background-repeat:no-repeat;
         background-position: center;
-        //background-size: cover;
         width:100%;
         color:#212529;
         margin-top:5%;
@@ -53,85 +48,39 @@ main {
                 }
             }
         }
-    }
-      
-        #bigZoomImage{
-            display:none;
-            background-image: none;
-            background-color: #ffffff;
-            div {                
-                div {
-                    background-color: #ffffff;
-                    #modalLegend{
-                        font-family: Caveat;
-                        font-size: 1.6rem;
-                        font-weight: bold;
-                        border:5px solid #ffffff;
-                        padding:5px;
-                    }
-                }
-            }
+    }      
+    #bigZoomImage{
+        display:none;
+        background-image: none;
+        background-color: #ffffff;
+        div {                
             div {
-                div {
-                    img{
-                        color:#212529;
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-                        border:10px solid #ffffff;
-                        border-radius:3px;
-                    }
+                background-color: #ffffff;
+                #modalLegend{
+                    font-family: Caveat;
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    border:5px solid #ffffff;
+                    padding:5px;
                 }
             }
-        }
-        #modalImage{
-            color:#212529;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-            border-top:0.8rem solid #ffffff;
-            border-bottom:0.8rem solid #ffffff;
-            border-radius:3px;
-        }
-    div {
-        .modal{
-            width: 80%;
-            height: 80%;
-            overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
         }
         div {
-            .modal-dialog{
-                display: table-cell;
-                vertical-align: middle;
-            }
             div {
-                .modal-content{
-                    margin: auto;
-                    background-color: #ffffff;
-                    position: relative;
-                    width: 100%;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-                    animation-name: reduceOpacity;
-                    animation-duration: 0.5s;
-                    border:10px solid red;
-                }
-                header{
-                    div {
-                        div {
-                            .legend{
-                                font-family: Caveat;
-                                font-size: 1.6rem;
-                                margin:5px;
-                            }
-                        }
-                    }
-                }
-                div {
-                    #modalImage{
-    
-                    }
-                }
-                footer{
-    
+                img{
+                    color:#212529;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+                    border:10px solid #ffffff;
+                    border-radius:3px;
                 }
             }
         }
+    }
+    #modalImage{
+        color:#212529;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+        border-top:0.8rem solid #ffffff;
+        border-bottom:0.8rem solid #ffffff;
+        border-radius:3px;
     }
 }

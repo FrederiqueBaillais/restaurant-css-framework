@@ -40,23 +40,6 @@ body main {
   position: absolute;
 }
 
-@-webkit-keyframes reduceOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes reduceOpacity {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 main h1 {
   margin: 30px;
 }
@@ -114,31 +97,4 @@ main #modalImage {
   border-top: 0.8rem solid #ffffff;
   border-bottom: 0.8rem solid #ffffff;
   border-radius: 3px;
-}
-main div .modal {
-  width: 80%;
-  height: 80%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-main div div .modal-dialog {
-  display: table-cell;
-  vertical-align: middle;
-}
-main div div div .modal-content {
-  margin: auto;
-  background-color: #ffffff;
-  position: relative;
-  width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: reduceOpacity;
-          animation-name: reduceOpacity;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  border: 10px solid red;
-}
-main div div div header div div .legend {
-  font-family: Caveat;
-  font-size: 1.6rem;
-  margin: 5px;
 }/*# sourceMappingURL=gallery.css.map */
