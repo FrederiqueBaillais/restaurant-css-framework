@@ -18,11 +18,11 @@ function closeZoom(){
     document.getElementById("bigZoomImage").style.display="none";
 }
 function changeThumbnailSrc(img){
-    var sourceUrl = "/assets/img/gallery/"+img+"_thumbnail.jpg";
+    var sourceUrl = "../assets/img/gallery/"+img+"_thumbnail.jpg";
     return sourceUrl;
 }
 function changeImgSrc(img){
-    var sourceUrl = "/assets/img/gallery/"+img+".jpg";
+    var sourceUrl = "../assets/img/gallery/"+img+".jpg";
     return sourceUrl;
 }
 function nextImages(){    
