@@ -52,9 +52,7 @@
         <!--  menu end  -->
     </header>
     <main>
-        <section class="galleryTitle">
-            <h1>Woods Burger en images...</h1>
-        </section>
+        <section class="galleryTitle"><h1>Woods Burger en images...</h1></section>
         <section id="galleryContainer" class="text-center">
             <!-- Show Thumbnails -->
             <div class="row text-center d-flex flex-wrap align-display-around align-items-baseline">
@@ -62,37 +60,34 @@
                 <div class="col-6 col-md-4">
                     <p>
                         <a href="#zoomImage" onClick="showImg(0);">
-                            <img id="srcImg1" src="/assets/img/gallery/woods-burger0-thumbnail.png" class="img-fluid"
-                                alt="Humm" />
+                            <img id="srcImg1" src="/assets/img/gallery/WBHD1_thumbnail.jpg" class="img-fluid" alt="Humm" />
                         </a>
                     </p>
-                    <p id="legendImg1" class="legend">Légende 1..</p>
-                </div>
+                    <p id="legendImg1" class="legend">En toute simplicité</p>
+                </div>            
                 <!-- Thumbnail 2 -->
                 <div class="col-6 col-md-4">
                     <p>
                         <a href="#zoomImage" onClick="showImg(1);">
-                            <img id="srcImg2" src="/assets/img/gallery/woods-burger1-thumbnail.png" class="img-fluid"
-                                alt="Image 2" />
+                            <img id="srcImg2" src="/assets/img/gallery/WBHD2_thumbnail.jpg" class="img-fluid" alt="Image 2" />
                         </a>
                     </p>
-                    <p id="legendImg2" class="legend">Légende 2</p>
-                </div>
-                <!-- Thumbnail 3 -->
+                    <p id="legendImg2" class="legend">Avec le sourire!</p>
+                </div> 
+                <!-- Thumbnail 3 -->                    
                 <div class="col-6 col-md-4">
                     <p>
                         <a href="#zoomImage" onClick="showImg(2);">
-                            <img id="srcImg3" src="/assets/img/gallery/woods-burger2-thumbnail.png" class="img-fluid"
-                                alt="Image 3" />
+                            <img id="srcImg3" src="/assets/img/gallery/WBHD3_thumbnail.jpg" class="img-fluid" alt="Image 3" />
                         </a>
                     </p>
-                    <p id="legendImg3" class="legend">Légende 3</p>
+                    <p id="legendImg3" class="legend">On the road again</p>
                 </div>
                 <!-- Button next serie of thumbnails -->
                 <div class="col-6 col-md-12 text-center align-items-center">
-                    <a href="#" onclick="nextImages(111);">
+                    <a href="#" onclick="nextImages();">
                         <i class="bi-arrow-right-circle-fill" style="font-size: 5rem; color:#212529;"></i>
-                    </a>
+                </a>
                 </div>
             </div>
         </section>
@@ -110,17 +105,13 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-md-12 d-flex text-center"></div>
-                    <img id="modalImage" src="/assets/img/gallery/woods-burger0.png" style="width:100%;" alt="Humm" />
+                    <img id="modalImage" src="/assets/img/gallery/WBHD1.jpg" style="width:100%;" alt="Humm" /> 
                 </div>
-            </div>
             </div>
         </section>
         <div id="posCurrentImg" style="visibility:hidden;">0</div>
-        <div id="arrayImages" style="visibility:hidden;">
-            woods-burger0,woods-burger1,woods-burger2,woods-burger3,woods-burger4,woods-burger5,woods-burger6,woods-burger7,woods-burger8,woods-burger9,woods-burger10,woods-burger11
-        </div>
-        <div id="arrayLegends" style="visibility:hidden;">Légende 1,Légende 2,Légende 3,Légende 4,Légende 5,Légende
-            6,Légende 7,Légende 8,Légende 9,Légende 10,Légende 11,Légende 12</div>
+        <div id="arrayImages" style="visibility:hidden;">WBHD1,WBHD2,WBHD3,WBHD4,WBHD5,WBHD6,WBHD7,WBHD8,WBHD9,WBHD10,WBHD11,WBHD12</div>
+        <div id="arrayLegends" style="visibility:hidden;">En toute simplicité,Avec le sourire!,On the road again,Sur les routes wallonnes,The "THB Mac" à domicile,Pour vos events,Le Burger sous toutes ses formes,Impossible de lui résister...,The Vegan,Ingrédients frais,Des produits locaux,Nos sauces maison uniques</div>
     </main>
     <footer class="bg-dark text-white">
         <section class="container-fluid p-4">
@@ -182,6 +173,22 @@
                         </ul>
                     </nav>
                 </div>
+            </div>
+            <div class="text-center">
+                <ul class="navbar footerName justify-content-center my-3">
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/FrederiqueBaillais">Frédérique
+                            Baillais</a> </li>
+                    <i class="bi bi-circle-fill mx-2" style="font-size: 0.5rem;"></i>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/RomainM27">Romain Mathieu</a></li>
+                    <i class="bi bi-circle-fill mx-2" style="font-size: 0.5rem;"></i>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/stephane-englebert">Stéphane
+                            Englebert</a></li>
+                    <i class="bi bi-circle-fill mx-2" style="font-size: 0.5rem;"></i>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/AdrienCallewaert">Adrien
+                            Callewaert</a></li>
+                    <i class="bi bi-circle-fill mx-2" style="font-size: 0.5rem;"></i>
+                    <li class="nav-item"><a class="nav-link" href="https://github.com/HanLoi">Loïc Hannecart</a></li>
+                </ul>
             </div>
             <div class="text-center p-4 mt-3">© 2021 Copyright:
                 <a href="#" class="text-white">Woods Burger</a>

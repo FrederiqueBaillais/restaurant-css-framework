@@ -7,28 +7,42 @@
 header nav a img {
   width: 90px;
 }
+
 header nav button .navbar-toggler-icon {
   background-image: url("/assets/img/list.svg");
   width: 50px;
   height: 50px;
 }
+
 header nav div ul li {
   font-size: 2rem;
   margin: 0 1rem;
   font-family: Caveat;
 }
 
+footer section .footerName {
+  list-style-type: none;
+  font-size: 1.5rem;
+}
+
+footer section .footerName li a {
+  font-family: Caveat;
+  color: white;
+}
+
 footer section .footerTitle {
   color: #16a086;
 }
+
 footer section div nav {
   font-family: Caveat;
   font-size: 1.6rem;
 }
 
 body {
-  font-family: Montserrat, sans-serif;
+  font-family: Montserrat , sans-serif;
 }
+
 body main {
   min-height: 85vh;
 }
@@ -49,4 +63,5 @@ body main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}/*# sourceMappingURL=style_home.css.map */
+}
+/*# sourceMappingURL=style_home.css.map */
