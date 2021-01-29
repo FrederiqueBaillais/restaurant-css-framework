@@ -43,3 +43,9 @@
 
 
 ## Pictures Credits
+
+> Foto truckfood
+[HTML Webpage](https://www.pexels.com/@tima-miroshnichenko/)
+
+> Foto Burger
+[HTML Webpage](https://www.pexels.com//)
