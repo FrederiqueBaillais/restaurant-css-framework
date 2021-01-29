@@ -40,7 +40,7 @@ function nextImages(){
     document.getElementById("legendImg3").innerHTML = arrayLegends[posNextImages+2];
 }
 function initArrayImages(){
-    var stringArrayImages=document.getElementById("arrayImages").innerHTML;
+    var stringArrayImages=document.getElementById("arrayImages").innerHTML.trim(); // precaution en cas d espace superflu
     var arrayImages = stringArrayImages.split(",");
     //alert("tab_img = " + arrayImages);
     return arrayImages;
